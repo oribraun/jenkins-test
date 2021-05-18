@@ -1,0 +1,2 @@
+1. docker build . -t jenkins-test
+2. docker run -p 8080:8080 -d jenkins-test or docker run -p 49160:8080 -d jenkins-test
