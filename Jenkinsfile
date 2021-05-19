@@ -27,7 +27,7 @@ pipeline {
 			agent {
 				docker {
 					image 'node:14-alpine'
-					args '-p 3000:3000'
+					args '-p 2375:2375'
 				}
 			}
             steps{
