@@ -1,4 +1,9 @@
 pipeline {
+	environment {
+		imagename = "deploy-test"
+		registryCredential = 'yenigul-dockerhub'
+		dockerImage = ''
+	}
     agent {
         docker {
             image 'node:14-alpine'
