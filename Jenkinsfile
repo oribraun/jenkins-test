@@ -26,15 +26,5 @@ pipeline {
             }
 
         }
-		stage ('Pushing to Docker Hub'){
-            steps{
-                script{
-                    docker.withRegistry('',registyCredential){
-                        dockerImage.push()
-                    }
-                }
-            }
-
-        }
     }
 }
