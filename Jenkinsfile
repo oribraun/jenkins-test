@@ -1,7 +1,7 @@
 pipeline {
 	environment {
 		imagename = "deploy-test"
-		registryCredential = 'yenigul-dockerhub'
+		registryCredential = 'deploy-test-dockerhub'
 		dockerImage = ''
 	}
     agent {
